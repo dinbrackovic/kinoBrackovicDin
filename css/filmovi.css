@@ -6,3 +6,28 @@
 .trenutno { background: white; }
 .uskoro { background: powderblue; }
 .vise-nije { background: gray; }
+.sadrzaj {
+    padding: 70px 30px;
+}
+
+.sekcija {
+    margin-bottom: 40px;
+}
+
+.sekcija h2 {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.film-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 10px;
+}
+
+.film {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+}
