@@ -31,3 +31,43 @@
     border-radius: 6px;
     padding: 10px;
 }
+trenutno {
+    background: white;
+}
+
+.uskoro {
+    background: powderblue;
+}
+
+.vise-nije {
+    background: gray;
+}
+
+.film img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.naziv {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.trajanje {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 800px) {
+    .film-grid {
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media (max-width: 500px) {
+    .film-grid {
+        grid-template-columns: 1fr;
+    }
+}
