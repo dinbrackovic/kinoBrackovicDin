@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="bs">
-     <link rel="stylesheet" href="../css/filmovi.css">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmovi</title>
+    <link rel="stylesheet" href="../css/filmovi.css">
 </head>
 <body>
 
-<h1>Filmovi</h1>
-<nav>
-    <ul>
-        <li>Filmovi</li>
-        <li>Raspored</li>
-        <li>Sala</li>
+<nav class="navigacija">
+    <ul class="meni">
+        <li><a href="filmovi.html">Filmovi</a></li>
+        <li><a href="#">Raspored</a></li>
+        <li><a href="sala.html">Sala</a></li>
     </ul>
 </nav>
-<section id="akcija">
+
+<main class="sadrzaj">
+
+<!-- AKCIJA -->
+<section id="akcija" class="sekcija">
     <h2>Akcija</h2>
-</section>
+    <div class="film-grid">
 
-<section id="drama">
-    <h2>Drama</h2>
-</section>
-
-<section id="komedija">
-    <h2>Komedija</h2>
-</section>
-
-<section id="animirani">
-    <h2>Animirani</h2>
-</section>
-<div class="film">
-    <p>Mission Impossible</p>
-    <span>148 min</span>
-</div>
-  <div class="film trenutno">
+        <div class="film trenutno">
             <img src="https://image.tmdb.org/t/p/w500/NNxYkU70HPurnNCSiCjYAmacwm.jpg">
             <p class="naziv">Mission Impossible</p>
             <p class="trajanje">148 min</p>
@@ -171,9 +160,11 @@
             <p class="naziv">Migration</p>
             <p class="trajanje">83 min</p>
         </div>
-         </div>
+
+    </div>
 </section>
 
 </main>
+
 </body>
-</html>
+</html>>

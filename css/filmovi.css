@@ -1,11 +1,39 @@
-.film-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 200px);
-    gap: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.trenutno { background: white; }
-.uskoro { background: powderblue; }
-.vise-nije { background: gray; }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    min-width: 300px;
+}
+
+.navigacija {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.meni {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px 20px;
+}
+
+.meni li {
+    margin-right: 20px;
+}
+
+.meni a {
+    text-decoration: none;
+    color: #555;
+}
+
 .sadrzaj {
     padding: 70px 30px;
 }
@@ -31,7 +59,8 @@
     border-radius: 6px;
     padding: 10px;
 }
-trenutno {
+
+.trenutno {
     background: white;
 }
 
