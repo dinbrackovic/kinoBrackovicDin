@@ -1,0 +1,22 @@
+.sjediste {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 11px;
+    border-radius: 2px;
+}
+
+.slobodno {
+    background-color: #18d26b;
+}
+
+.zauzeto {
+    background-color: #ff6b6b;
+}
+
+.rezervisano {
+    background-color: #9ea7b3;
+}
