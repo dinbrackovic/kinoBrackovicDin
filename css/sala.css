@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    min-width: 300px;
+    color: #444;
+}
+
+.navigacija {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ececec;
+    border-bottom: 1px solid #d6d6d6;
+    z-index: 1000;
+}
+
+.meni {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 28px;
+    padding: 10px 22px;
+}
+
+.meni a {
+    text-decoration: none;
+    color: #56606b;
+    font-size: 13px;
+}
+
+.sadrzaj {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 78px 20px 40px;
+}
+
+.info-sekcija {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.info-kartice {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.info-kartica {
+    background-color: #f7f7f7;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    padding: 14px 14px 16px;
+    min-height: 70px;
+}
+
+.labela {
+    display: block;
+    font-size: 11px;
+    color: #7b7b7b;
+    margin-bottom: 8px;
+}
+
+.info-kartica p {
+    font-size: 15px;
+    color: #2f3c4a;
+}
+
+.platno {
+    width: 185px;
+    text-align: center;
+    border: 1px solid #93a0af;
+    color: #5b6673;
+    padding: 11px 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.sala-kontejner {
+    background-color: #f7f7f7;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    padding: 22px 18px 18px;
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.red {
+    display: grid;
+    grid-template-columns: 24px repeat(10, 26px);
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.oznaka-reda {
+    font-size: 14px;
+    color: #54606c;
+    text-align: left;
+}
+
+.sjediste {
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slobodno {
+    background-color: #18d26b;
+}
+
+.zauzeto {
+    background-color: #ff6b6b;
+}
+
+.rezervisano {
+    background-color: #9ea7b3;
+}
+
+.legenda {
+    width: fit-content;
+    margin: 16px auto 0;
+    padding-top: 16px;
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stavka-legende {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #5c6672;
+}
+
+.boja {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+@media (max-width: 900px) {
+    .info-kartice {
+        grid-template-columns: 1fr;
+    }
+
+    .sala-kontejner {
+        overflow-x: auto;
+    }
+
+    .red {
+        width: max-content;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigacija {
+        position: static;
+    }
+
+    .meni {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 20px;
+    }
+
+    .sadrzaj {
+        padding-top: 20px;
+    }
+}
